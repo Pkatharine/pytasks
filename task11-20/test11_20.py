@@ -71,12 +71,27 @@ class Tests_task_11_20(unittest.TestCase):
     def test_eighteen_one_invalid(self):
         self.assertEqual(task11_20.task_18("2We3345"), '')
 
+    def test_eighteen_all_invalid(self):
+        self.assertEqual(task11_20.task_18("a F1#,2w3E*,2We3345"), '')
 
+    def test_nineteen(self):
+        self.assertEqual(task11_20.task_19("Tom,19,80 John,20,90 Jony,17,91 Jony,17,93 Json,21,85"),
+                         [['John', '20', '90'], ['Jony', '17', '91'], ['Jony', '17', '93'], ['Json', '21', '85'], ['Tom', '19', '80']])
 
+    def test_nineteen_empty(self):
+        self.assertEqual(task11_20.task_19(), [['']])
 
+    def test_nineteen_one(self):
+        self.assertEqual(task11_20.task_19("Tom"), [['Tom']])
 
+    def test_twenty(self):
+        self.assertEqual(task11_20.Twenty.task_20(10), [0, 7, 14])
 
+    def test_twenty_empty(self):
+        self.assertEqual(task11_20.Twenty.task_20(), "You must enter number")
 
+    def test_twenty_negative(self):
+        self.assertEqual(task11_20.Twenty.task_20(-10), "Number must be positive")
 
 
 

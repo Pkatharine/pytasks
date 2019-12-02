@@ -198,28 +198,18 @@ The sort criteria is:
 3: Then sort by score.
 The priority is that name > age > score.
 If the following tuples are given as input to the program:
-Tom,19,80
-John,20,90
-Jony,17,91
-Jony,17,93
-Json,21,85
+Tom,19,80 John,20,90 Jony,17,91 Jony,17,93 Json,21,85
 Then, the output of the program should be:
 [('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
 """
 
 
-def task_19(x):
-    lst = []
-    while True:
-        x = input().split(',')
-        if not x[0]:
-            break
-        lst.append(tuple(x))
-    lst.sort(key=lambda x: (x[0], x[1], x[2]))
-    return lst
+def task_19(info):
+    info_list = (case.split(',') for case in info.split(' '))
+    return sorted(info_list)
 
 
-# print(task_19(input()))
+#print(task_19(input()))
 
 
 """Question 20
@@ -227,15 +217,12 @@ Define a class with a generator which can iterate the numbers, which are divisib
 """
 
 
-class Iterator(object):
-    def __init__(self, n):
-        super(Iterator, self).__init__()
-        self.n = n
+class Twenty:
+    def task_20(self, n):
+        return [i for i in range(n + 1) if i % 7 == 0]
 
-    def div_by_seven(self):
-        for i in range(0, self.n):
-            if i % 7 == 0:
-                yield i
 
-# for num in Iterator(100).div_by_seven():
-#     print(num)
+n = int(input())
+num = Twenty()
+lst = num.task_20(n)
+print(lst)

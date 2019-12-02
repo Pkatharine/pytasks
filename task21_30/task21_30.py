@@ -23,22 +23,22 @@ Then, the output of the program should be:
 def task_21(s):
     x, y = 0, 0
     while True:
-        s = s.split("")
-        if not s:
+        if s == "":
             break
-        if s[0] == 'UP':
-            x -= int(s[1])
-        if s[0] == 'DOWN':
-            x += int(s[1])
-        if s[0] == 'LEFT':
-            y -= int(s[1])
-        if s[0] == 'RIGHT':
-            y += int(s[1])
+        else:
+            s = s.split(" ")
+            if s[0] == 'UP':
+                x -= int(s[1])
+            if s[0] == 'DOWN':
+                x += int(s[1])
+            if s[0] == 'LEFT':
+                y -= int(s[1])
+            elif s[0] == 'RIGHT':
+                y += int(s[1])
     return round(math.sqrt(pow(x, 2) + pow(y, 2)))
 
 
-# s = input()
-# print(task_21(s))
+#print(task_21(input()))
 
 
 """Question 22

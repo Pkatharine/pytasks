@@ -39,8 +39,7 @@ def task_12():
 
     return ",".join(res)
 
-
-# print(task_12())
+#print(task_12())
 
 
 """Question 13
@@ -63,7 +62,7 @@ def task_13(x):
     return "LETTERS " + str(let) + '\n' + "DIGITS " + str(num)
 
 
-# print(task_13("hello world! 123"))
+#print(task_13("hello world! 123"))
 
 
 """Question 14
@@ -103,7 +102,7 @@ def task_15(x):
     return int(x) + int(x * 2) + int(x * 3) + int(x * 4)
 
 
-# print(task_15(9))
+#print(task_15(9))
 
 
 """Question 16
@@ -122,7 +121,7 @@ def task_16(x):
     return str(res)[1:-1]
 
 
-# print(task_16("1,2,3,4,5,6,7,8,9"))
+#print(task_16('1,2,3,4,5,6,7,8,9'))
 
 
 """Question 17
@@ -187,7 +186,7 @@ def task_18(x):
     return ",".join(res)
 
 
-# print(task_18("ABd1234@1,a F1#,2w3E*,2We3345"))
+#print(task_18("ABd1234@1,a F1#,2w3E*,2We3345"))
 
 
 """Question 19

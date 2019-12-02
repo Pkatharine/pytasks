@@ -10,11 +10,10 @@ def one():
     lst = []
     for i in range(2000, 3201):
         if i % 7 == 0 and i % 5 == 0:
-            lst.append(str(i))
-    return ','.join(lst)
+            lst.append(i)
+    return lst
 
-
-# print(one())
+#print(one())
 
 
 """2. Write a program which can compute the factorial of a given numbers.
@@ -45,11 +44,11 @@ Then, the output should be:
 
 
 def three(i):
-    return {i: i * i for i in range(1, 9)}
+    return {i: i * i for i in range(1, i+1)}
 
 
-# i = int(input())
-# print(three(i))
+#i = int(input())
+#print(three(i))
 
 
 """4. Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
@@ -62,10 +61,12 @@ Then, the output should be:
 
 
 def four(x):
-    return x.split(','), tuple(x.split(','))
+    lst = x.split(',')
+    tup = tuple(lst)
+    return print(lst), print(tup)
 
 
-#
+
 # x = input()
 # print(four(x))
 
@@ -107,16 +108,18 @@ The output of the program should be:
 
 
 def six(d):
-    c, h = 50, 30
-    res = []
-    for i in d.split(","):
-        print(int(i))
-        res.append(math.sqrt((2 * c * int(i)) / h))
-    return str(res)
+    d = d.split(',')
+    C = 50
+    H = 30
+    val = []
+    items = [x for x in d]
+    for D in items:
+        val.append(str(int(round(math.sqrt(2 * C * float(D) / H)))))
+    return ','.join(val)
 
 
-# d = input()
-# print(six(d))
+#d = input()
+#print(six(d))
 
 
 """"
@@ -168,8 +171,7 @@ Suppose the following input is supplied to the program:
 Hello world
 Practice makes perfect
 Then, the output should be:
-HELLO WORLD
-PRACTICE MAKES PERFECT
+HELLO WORLD PRACTICE MAKES PERFECT
 """
 
 
@@ -193,4 +195,4 @@ def ten(x):
     return " ".join(sorted(set(x)))
 
 
-print(ten("hello world and practice makes perfect and hello world again"))
+#print(ten("hello world and practice makes perfect and hello world again"))

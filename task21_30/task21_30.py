@@ -20,22 +20,19 @@ Then, the output of the program should be:
 """
 
 
-def task_21(s):
+def task_21(x):
+    s = x.split(" ")
     x, y = 0, 0
-    while True:
-        if s == "":
-            break
-        else:
-            s = s.split(" ")
-            if s[0] == 'UP':
-                x -= int(s[1])
-            if s[0] == 'DOWN':
-                x += int(s[1])
-            if s[0] == 'LEFT':
-                y -= int(s[1])
-            elif s[0] == 'RIGHT':
-                y += int(s[1])
-    return round(math.sqrt(pow(x, 2) + pow(y, 2)))
+    for i in range(0, len(s) - 1):
+        if s[i] == 'RIGHT':
+            x = x + int(s[i + 1])
+        elif s[i] == 'LEFT':
+            x = x - int(s[i + 1])
+        elif s[i] == "UP":
+            y = y + int(s[i + 1])
+        elif s[i] == "DOWN":
+            y = y - int(s[i + 1])
+    return int(math.sqrt(x ** 2 + y ** 2))
 
 
 #print(task_21(input()))
@@ -62,13 +59,14 @@ to:1
 
 
 def task_22(x):
-    x = x.split()
-    st = sorted(set(x))
-    for i in st:
-        print("{0}:{1}".format(i, st.count(i)))
+    sort = x.split()
+    dict = {i: sort.count(i) for i in sort}
+    dict = sorted(dict.items())
+    return dict
 
 
-task_22("New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3.")
+#print(task_22(input()))
+
 
 """Question 23
 Write a method which can calculate square value of number
@@ -126,7 +124,7 @@ def task_27(x):
     return str(x)
 
 
-print(task_27(9999))
+#print(task_27(9999))
 
 """Question 29
 Define a function that can receive two integral numbers in string form

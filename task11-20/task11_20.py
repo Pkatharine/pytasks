@@ -222,7 +222,7 @@ class Twenty:
         return [i for i in range(n + 1) if i % 7 == 0]
 
 
-n = int(input())
-num = Twenty()
-lst = num.task_20(n)
-print(lst)
+#n = int(input())
+#num = Twenty()
+#lst = num.task_20(n)
+#print(lst)

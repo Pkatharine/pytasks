@@ -79,6 +79,7 @@ def task_23(x):
     :return: square value of x number
     """
     return x ** 2
+#print(task_23(int(input())))
 
 
 """Question 24
@@ -114,6 +115,7 @@ Define a function which can compute the sum of two numbers.
 def task_26(x, y):
     return x + y
 
+#print(task_26(int(input())))
 
 """Question 27
 Define a function that can convert a integer into a string and print it in console.
@@ -124,7 +126,7 @@ def task_27(x):
     return str(x)
 
 
-#print(task_27(9999))
+#print(task_27(999))
 
 """Question 29
 Define a function that can receive two integral numbers in string form
@@ -137,7 +139,7 @@ def task_29(x):
     return int(x[0]) + int(x[1])
 
 
-# print(task_29("10 20"))
+#print(task_29("10 20"))
 
 
 """Question 30
@@ -148,4 +150,4 @@ Define a function that can accept two strings as input and concatenate them and 
 def task_30(x, y):
     return x + y
 
-# print(task_30("hey", "world"))
+print(task_30("", ""))

@@ -4,16 +4,16 @@ Define a function which can generate and print a tuple where the value are squar
 """
 
 
-def task_41():
-    tpl = tuple(pow(i, 2) for i in range(1, 21))
-    print(tpl)
+def task_41(n):
+    tpl = tuple(pow(i, 2) for i in range(1, n+1))
+    return (tpl)
 
 
-# task_41()
+#print(task_41(int(input())))
 
 
 """Question 42
-With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line
+With a given tuple 12345678910  write a program to print the first half values in one line
  and the last half values in one line. 
 """
 
@@ -22,10 +22,10 @@ def task_42():
     t = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     first = t[:(len(t) // 2)]
     second = t[(len(t) // 2):]
-    print(first, '\n', second)
+    return (first, second)
 
 
-# task_42()
+#print(task_42())
 
 
 """Question 43
@@ -37,10 +37,10 @@ Write a program to generate and print another tuple whose values are even number
 def task_43():
     t = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     new_t = tuple(i for i in t if i % 2 == 0)
-    print(new_t)
+    return (new_t)
 
 
-# task_43()
+#print(task_43())
 
 
 """Question 44
@@ -51,12 +51,12 @@ if the string is "yes" or "YES" or "Yes", otherwise print "No".
 
 def task_44(x):
     if x == "yes" or x == "YES" or x == "Yes":
-        print("Yes")
+        return ("Yes")
     else:
-        print("No")
+        return ("No")
 
 
-# task_44("Yes")
+#print(task_44(input()))
 
 
 """Question 45
@@ -70,7 +70,7 @@ def task_45():
     return result
 
 
-# print(task_45())
+#print(task_45())
 
 
 """Question 46
@@ -84,7 +84,7 @@ def task_46():
     return result
 
 
-# print(task_46())
+#print(task_46())
 
 
 """Question 47
@@ -99,7 +99,7 @@ def task_47():
     return result
 
 
-# print(task_47())
+#print(task_47())
 
 
 """Question 48
@@ -107,12 +107,12 @@ Write a program which can filter() to make a list whose elements are even number
 """
 
 
-def task_48():
-    result = list(filter(lambda x: x % 2 == 0, [i for i in range(1, 21)]))
+def task_48(n):
+    result = list(filter(lambda x: x % 2 == 0, [i for i in range(1, n+1)]))
     return result
 
 
-# print(task_48())
+#print(task_48(int(input())))
 
 
 """Question 49
@@ -120,12 +120,12 @@ Write a program which can map() to make a list whose elements are square of numb
 """
 
 
-def task_49():
-    result = list(map(lambda x: x ** 2, [i for i in range(1, 21)]))
+def task_49(n):
+    result = list(map(lambda x: x ** 2, [i for i in range(1, n+1)]))
     return result
 
 
-# print(task_49())
+#print(task_49(int(input())))
 
 
 """Question 50

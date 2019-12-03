@@ -23,16 +23,68 @@ class Test_task_21_30(unittest.TestCase):
     def test_task_22_only_one(self):
         self.assertEqual(task21_30.task_22("New"), [('New', 1)])
 
+    def test_task_23(self):
+        self.assertEqual(task21_30.task_23(3), 9)
 
+    def test_task_23_negative(self):
+        self.assertEqual(task21_30.task_23(-2), 4)
 
+    def test_task_23_zero(self):
+        self.assertEqual(task21_30.task_23(0), 0)
 
+    def test_task_23_one(self):
+        self.assertEqual(task21_30.task_23(1), 1)
 
+    def test_task_23_empty(self):
+        self.assertEqual(task21_30.task_23(), ValueError)
 
+    def test_task_26(self):
+        self.assertEqual(task21_30.task_26(1,2), 3)
 
+    def test_task_26_two_negative(self):
+        self.assertEqual(task21_30.task_26(-1,-2), -3)
 
+    def test_task_26_negative_and_positive(self):
+        self.assertEqual(task21_30.task_26(1,-2), -1)
 
+    def test_task_26_one_zero(self):
+        self.assertEqual(task21_30.task_26(1,0), 1)
 
+    def test_task_26_two_zeros(self):
+        self.assertEqual(task21_30.task_26(0,0), 0)
 
+    def test_task_26_one_empty(self):
+        self.assertEqual(task21_30.task_26(1), TypeError)
+
+    def test_task_26_two_empty(self):
+        self.assertEqual(task21_30.task_26(), TypeError)
+
+    def test_task_27(self):
+        self.assertEqual(task21_30.task_27(15), '15')
+
+    def test_task_27_empty(self):
+        self.assertEqual(task21_30.task_27(), TypeError)
+
+    def test_task_29(self):
+        self.assertEqual(task21_30.task_29('2 3'), 5)
+
+    def test_task_29_one_negative(self):
+        self.assertEqual(task21_30.task_29('-2 3'), 1)
+
+    def test_task_29_empty(self):
+        self.assertEqual(task21_30.task_29(''), ValueError)
+
+    def test_task_30(self):
+        self.assertEqual(task21_30.task_30("hello", "world"), 'helloworld')
+
+    def test_task_30_empty(self):
+        self.assertEqual(task21_30.task_30("",""), '')
+
+    def test_task_30_two_numbers(self):
+        self.assertEqual(task21_30.task_30("1","2"), '12')
+
+    def test_task_30_str_and_number(self):
+        self.assertEqual(task21_30.task_30("am","-2"), 'am-2')
 
 
 

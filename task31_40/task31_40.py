@@ -12,8 +12,7 @@ def task_31(x, y):
     else:
         return x + '\n' + y
 
-
-# print(task_31("hey", "world"))
+#print(task_31("hey", "world"))
 
 
 """Question 32
@@ -26,7 +25,7 @@ def task_32(x):
     return "It is an even number" if x % 2 == 0 else "It is an odd number"
 
 
-# print(task_32(6))
+#print(task_32(-6))
 
 
 """Question 33
@@ -35,14 +34,14 @@ Define a function which can print a dictionary where the keys are numbers betwee
 """
 
 
-def task_33():
+def task_33(n):
     d = dict()
-    for i in range(1, 4):
+    for i in range(1, n+1):
         d[i] = pow(i, 2)
-    print(d)
+    return d
 
 
-# task_33()
+#print(task_33(int(input())))
 
 
 """
@@ -52,14 +51,14 @@ Define a function which can print a dictionary where the keys are numbers betwee
 """
 
 
-def task_34():
+def task_34(n):
     d = dict()
-    for i in range(1, 21):
+    for i in range(1, n+1):
         d[i] = pow(i, 2)
-    print(d)
+    return d
 
 
-# task_34()
+#print(task_34(int(input())))
 
 
 """Question 35
@@ -68,14 +67,14 @@ Define a function which can generate a dictionary where the keys are numbers bet
 """
 
 
-def task_35():
+def task_35(n):
     d = dict()
-    for i in range(1, 21):
+    for i in range(1, n+1):
         d[i] = pow(i, 2)
-    print(d.values())
+    return str(d.values())
 
 
-# task_35()
+#print(task_35(int(input())))
 
 
 """Question 36
@@ -84,14 +83,14 @@ Define a function which can generate a dictionary where the keys are numbers bet
 """
 
 
-def task_36():
+def task_36(n):
     d = dict()
-    for i in range(1, 21):
+    for i in range(1, n+1):
         d[i] = pow(i, 2)
-    return d.keys()
+    return str(d.keys())
 
 
-# print(task_36())
+#print(task_36(int(input())))
 
 
 """Question 37
@@ -100,14 +99,14 @@ Define a function which can generate and print a list where the values are squar
 """
 
 
-def task_37():
+def task_37(n):
     res = []
-    for i in range(1, 21):
+    for i in range(1, n+1):
         res.append(pow(i, 2))
-    print(res)
+    return res
 
 
-# task_37()
+#print(task_37(int(input())))
 
 
 """Question 38
@@ -116,14 +115,14 @@ Define a function which can generate a list where the values are square of numbe
 """
 
 
-def task_38():
+def task_38(n):
     res = []
-    for i in range(1, 21):
+    for i in range(1, n+1):
         res.append(pow(i, 2))
-    print(res[:5])
+    return (res[:5])
 
 
-# task_38()
+#print(task_38(int(input())))
 
 
 """Question 39
@@ -132,14 +131,14 @@ Define a function which can generate a list where the values are square of numbe
 """
 
 
-def task_39():
+def task_39(n):
     res = []
-    for i in range(1, 21):
+    for i in range(1, n+1):
         res.append(pow(i, 2))
-    print(res[-5:])
+    return (res[-5:])
 
 
-# task_39()
+#print(task_39(int(input())))
 
 
 """Question 40
@@ -148,12 +147,12 @@ Define a function which can generate a list where the values are square of numbe
 """
 
 
-def task_40():
+def task_40(n):
     res = []
-    for i in range(1, 21):
+    for i in range(1, n+1):
         res.append(pow(i, 2))
-    print(res[5:])
+    return (res[5:])
 
 
-# task_40()
+#print(task_40(int(input())))
 

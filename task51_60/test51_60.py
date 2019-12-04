@@ -6,6 +6,51 @@ class Test_task_51_60(unittest.TestCase):
     def test_task_51(self):
         self.assertTrue(issubclass (task51_60.NewYorker, task51_60.American))
 
+    def test_task_52(self):
+        self.assertEqual(task51_60.Circle(5).area(), 79)
+
+    def test_task_52_zero(self):
+        self.assertEqual(task51_60.Circle(0).area(), 0)
+
+    def test_task_52_negative(self):
+        self.assertEqual(task51_60.Circle(-5).area(), 'You must enter a positive number')
+
+    def test_task_52_letter(self):
+        self.assertEqual(task51_60.Circle(a).area(), 'You must enter only positive number')
+
+    def test_task_53(self):
+        self.assertEqual(task51_60.Rectangle(5,4).area(), 18)
+
+    def test_task_53_zeros(self):
+        self.assertEqual(task51_60.Rectangle(0,0).area(), 0)
+
+    def test_task_53_negative(self):
+        self.assertEqual(task51_60.Rectangle(-5,4).area(), -2)
+
+    def test_task_53_letter(self):
+        self.assertEqual(task51_60.Rectangle(5,a).area(), 'You must enter only numbers')
+
+    def test_task_54_subclass(self):
+        self.assertTrue(issubclass(task51_60.Square, task51_60.Shape))
+
+    def test_task_54_default_shape(self):
+        self.assertEqual(task51_60.Shape().area(), 0)
+
+    def test_task_54_default_square(self):
+        self.assertEqual(task51_60.Square().length, 0)
+
+    def test_task_54(self):
+        self.assertEqual(task51_60.Square(3).area(), 9)
+
+    def test_task_54_negative(self):
+        self.assertEqual(task51_60.Square(-3).area(), 9)
+
+    def test_task_54_zero(self):
+        self.assertEqual(task51_60.Square(0).area(), 0)
+
+    def test_task_54_letter(self):
+        self.assertEqual(task51_60.Square(a).area(), 'You must enter only number')
+
     def test_task_55(self):
         self.assertEqual(task51_60.task_55(5), "You are dividing a number by ZERO!")
 

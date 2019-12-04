@@ -26,7 +26,7 @@ class Circle:
         self.radius = radius
 
     def area(self):
-        return math.pi * (self.radius ** 2)
+        return round(math.pi * (self.radius ** 2))
 
 
 #circle = Circle(5)
@@ -48,8 +48,8 @@ class Rectangle:
         return (self.length + self.width) * 2
 
 
-# rect = Rectangle(5, 4)
-# print(rect.area())
+#rect = Rectangle(-5, 4)
+#print(rect.area())
 
 
 """Question 54
@@ -76,9 +76,9 @@ class Square(Shape):
         return self.length * self.length
 
 
-# sq = Square(3)
-# print(Square().area())
-# print(sq.area())
+#sq = Square(3)
+#print(Square().area())
+#print(sq.area())
 
 
 """Question 55

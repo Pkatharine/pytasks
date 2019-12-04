@@ -26,7 +26,7 @@ def task_92():
     return list(filter(lambda a: a != 24, lst))
 
 
-# print(task_92())
+#print(task_92())
 
 
 """
@@ -47,7 +47,7 @@ def task_93():
     return res
 
 
-# print(task_93())
+#print(task_93())
 
 
 """Question 94
@@ -65,7 +65,7 @@ def task_94():
     return res
 
 
-# print(task_94())
+#print(task_94())
 
 
 """
@@ -77,23 +77,24 @@ Define a class Person and its two child classes: Male and Female.
 
 class Person:
     def getGender(self):
-        print("Person")
+        return ("Person")
 
 
 class Male(Person):
     def getGender(self):
-        print("Male")
+        return ("Male")
 
 
 class Female(Person):
     def getGender(self):
-        print("Female")
+        return ("Female")
 
-
+person = Person()
 male = Male()
 female = Female()
-# male.getGender()
-# female.getGender()
+#print(person.getGender())
+#print(male.getGender())
+#print(female.getGender())
 
 
 """Question 96
@@ -120,7 +121,7 @@ def task_96(string):
         print(str(i) + "," + str(dict[i]))
 
 
-# task_96(input())
+#task_96(input())
 
 """Question 97
 Please write a program which accepts a string from console and print it in reverse order.
@@ -165,7 +166,7 @@ def task_99():
     return list(itertools.permutations([1, 2, 3]))
 
 
-# print(task_99())
+#print(task_99())
 
 
 """Question 100
@@ -176,7 +177,8 @@ We count 35 heads and 94 legs among the chickens and rabbits in a farm.
 
 
 def task_100(head, leg):
-    print("rabbits " + str(94 // 2 - 35) + " chikens " + str(35 - (94 // 2 - 35)))
+    rabbits = leg // 2 - head
+    chickens = head - rabbits
+    return (rabbits, chickens)
 
-
-print(task_100(35, 94))
+#print(task_100(35, 94))

@@ -23,11 +23,10 @@ Please write a program to compress and decompress the string "hello world!hello 
 def task_82():
     s = 'hello world!hello world!hello world!hello world!'.encode()
     k = zlib.compress(s)
-    print(k)
-    print(zlib.decompress(k))
+    return k, zlib.decompress(k)
 
 
-# print(task_82())
+#print(task_82())
 
 
 """Question 83
@@ -54,7 +53,7 @@ def task_84():
     return lst
 
 
-print(task_84())
+#print(task_84())
 
 """Question 85
 Please write a program to shuffle and print the list [3,6,7,8]
@@ -67,7 +66,7 @@ def task_85():
     return lst
 
 
-print(task_85())
+#print(task_85())
 
 """Question 86
 Please write a program to generate all sentences where subject is in ["I", "You"] 
@@ -98,7 +97,7 @@ def task_87():
     return lst
 
 
-# print(task_87())
+#print(task_87((input())))
 
 
 """Question 88
@@ -115,7 +114,7 @@ def task_88():
     return lst
 
 
-# print(task_88())
+#print(task_88())
 
 
 """Question 89
@@ -129,7 +128,7 @@ def task_89():
     return [lst[i] for i in range(len(lst)) if i not in [0, 2, 4, 6]]
 
 
-# print(task_89())
+#print(task_89())
 
 
 """Question 90
@@ -141,4 +140,4 @@ def task_90():
     return [[[0 for col in range(8)] for col in range(5)] for row in range(3)]
 
 
-print(task_90())
+#print(task_90())

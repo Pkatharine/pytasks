@@ -14,7 +14,7 @@ def task_71(expression):
     return eval(expression)
 
 
-# print(task_71(input()))
+#print(task_71(input()))
 
 """Question 72
 Please write a binary search function which searches an item in a sorted list. 
@@ -37,7 +37,7 @@ def task_72(li, element):
     return index
 
 
-# print(task_72([2, 5, 7, 9, 11, 17, 222], 5))
+#print(task_72([2, 5, 7, 9, 11, 17, 222], 5))
 
 
 """Question 73
@@ -61,7 +61,7 @@ def task_73(li, element):
     return index
 
 
-# print(task_73([2, 5, 7, 9, 11, 17, 222], 5))
+#print(task_73([2, 5, 7, 9, 11, 17, 222], 5))
 
 
 """Question 74
@@ -95,10 +95,10 @@ Please write a program to output a random even number between 0 and 10 inclusive
 
 
 def task_76():
-    return [random.randrange(0, 10, 2)]
+    return random.randrange(0, 10, 2)
 
 
-# print(task_76())
+#print(task_76())
 
 
 """Question 77
@@ -111,7 +111,7 @@ def task_77():
     return random.choice([i for i in range(0, 11) if i % 5 == 0 and i % 7 == 0])
 
 
-# print(task_77())
+#print(task_77())
 
 """Question 78
 Please write a program to generate a list with 5 random numbers between 100 and 200 inclusive.

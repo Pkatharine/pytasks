@@ -36,7 +36,7 @@ class Test_task_21_30(unittest.TestCase):
         self.assertEqual(task21_30.task_23(1), 1)
 
     def test_task_23_empty(self):
-        self.assertEqual(task21_30.task_23(), ValueError)
+        self.assertEqual(task21_30.task_23(), 'You have not entered a data.')
 
     def test_task_26(self):
         self.assertEqual(task21_30.task_26(1,2), 3)
@@ -54,16 +54,16 @@ class Test_task_21_30(unittest.TestCase):
         self.assertEqual(task21_30.task_26(0,0), 0)
 
     def test_task_26_one_empty(self):
-        self.assertEqual(task21_30.task_26(1), TypeError)
+        self.assertEqual(task21_30.task_26(1), 'You have not entered a data.')
 
     def test_task_26_two_empty(self):
-        self.assertEqual(task21_30.task_26(), TypeError)
+        self.assertEqual(task21_30.task_26(), 'You have not entered a data.')
 
     def test_task_27(self):
         self.assertEqual(task21_30.task_27(15), '15')
 
     def test_task_27_empty(self):
-        self.assertEqual(task21_30.task_27(), TypeError)
+        self.assertEqual(task21_30.task_27(), 'You have not entered a data.')
 
     def test_task_29(self):
         self.assertEqual(task21_30.task_29('2 3'), 5)
@@ -72,7 +72,7 @@ class Test_task_21_30(unittest.TestCase):
         self.assertEqual(task21_30.task_29('-2 3'), 1)
 
     def test_task_29_empty(self):
-        self.assertEqual(task21_30.task_29(''), ValueError)
+        self.assertEqual(task21_30.task_29(''), 'You have not entered a data.')
 
     def test_task_30(self):
         self.assertEqual(task21_30.task_30("hello", "world"), 'helloworld')

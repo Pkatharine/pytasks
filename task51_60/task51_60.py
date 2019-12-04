@@ -29,8 +29,8 @@ class Circle:
         return math.pi * (self.radius ** 2)
 
 
-# circle = Circle(5)
-# print(circle.area())
+#circle = Circle(5)
+#print(circle.area())
 
 
 """Question 53
@@ -86,14 +86,14 @@ Write a function to compute 5/0 and use try/except to catch the exceptions.
 """
 
 
-def task_55():
+def task_55(n):
     try:
-        return 5 / 0
+        return n / 0
     except ZeroDivisionError:
-        return 0
+        return "You are dividing a number by ZERO!"
 
 
-# print(task_55())
+#print(task_55(int(input())))
 
 
 """Question 56
@@ -124,7 +124,7 @@ def task_57(x):
 
 
 # x = input()
-# print(task_57(x))
+#print(task_57(input()))
 
 
 """Question 58
@@ -144,7 +144,7 @@ def task_58(x):
 
 
 # x = input()
-# print(task_58(x))
+#print(task_58(input()))
 
 
 """Question 59
@@ -163,7 +163,7 @@ def task_59(x):
     return [i for i in x if i.isdigit()]
 
 
-# print(task_59("2 cats and 3 dogs."))
+#print(task_59(input()))
 
 
 """Question 60
@@ -172,7 +172,6 @@ Print a unicode string "hello world".
 
 
 def task_60():
-    return u"hello world!"
+    return u"hello world"
 
-
-# print(task_60())
+#print(task_60())

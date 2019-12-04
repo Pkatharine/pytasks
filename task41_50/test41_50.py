@@ -7,7 +7,7 @@ class Test_task_41_50(unittest.TestCase):
         self.assertEqual(task41_50.task_41(20), (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400))
 
     def test_task_41_empty(self):
-        self.assertEqual(task41_50.task_41(), ValueError)
+        self.assertEqual(task41_50.task_41(), 'You have not entered a data.')
 
     def test_task_41_negative(self):
         self.assertEqual(task41_50.task_41(-3), ())
@@ -49,7 +49,7 @@ class Test_task_41_50(unittest.TestCase):
         self.assertEqual(task41_50.task_48(20), [2, 4, 6, 8, 10, 12, 14, 16, 18, 20])
 
     def test_task_48_empty(self):
-        self.assertEqual(task41_50.task_48(), ValueError)
+        self.assertEqual(task41_50.task_48(), 'You have not entered a data.')
 
     def test_task_48_negative(self):
         self.assertEqual(task41_50.task_48(-3), [])
@@ -62,7 +62,7 @@ class Test_task_41_50(unittest.TestCase):
                          [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400])
 
     def test_task_49_empty(self):
-        self.assertEqual(task41_50.task_49(), ValueError)
+        self.assertEqual(task41_50.task_49(), 'You have not entered a data.')
 
     def test_task_49_negative(self):
         self.assertEqual(task41_50.task_49(-3), [])

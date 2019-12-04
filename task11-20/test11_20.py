@@ -47,13 +47,13 @@ class Tests_task_11_20(unittest.TestCase):
         self.assertEqual(task11_20.task_15(0), 0)
 
     def test_fifteen_negative(self):
-        self.assertEqual(task11_20.task_15(-1), ValueError)
+        self.assertEqual(task11_20.task_15(-1), 'You have not entered a data.')
 
     def test_sixteen(self):
         self.assertEqual(task11_20.task_16("1,2,3,4,5,6,7,8,9"), "1, 9, 25, 49, 81")
 
     def test_sixteen_empty(self):
-        self.assertEqual(task11_20.task_16(""), TypeError)
+        self.assertEqual(task11_20.task_16(""), 'You have not entered a data.')
 
     def test_sixteen_only_one(self):
         self.assertEqual(task11_20.task_16("1"), '1')

@@ -9,7 +9,7 @@ def task_61(s):
     return u
 
 
-# print(task_61(s))
+#print(task_61(input()))
 
 """Question 62
 Write a special comment to indicate a Python source code file is in unicode.
@@ -34,11 +34,11 @@ In case of input data being supplied to the question, it should be assumed to be
 def task_63(n):
     sum = 0
     for i in range(1, n + 1):
-        sum += float(float(i) / (i + 1))
+        sum += round(float(float(i) / (i + 1)))
     return sum
 
 
-# print(task_63(n))
+#print(task_63(int(input())))
 
 """Question 64
 Write a program to compute:
@@ -60,7 +60,7 @@ def task_64(n):
     return task_64(n - 1) + 100
 
 
-# print(task_64(5))
+#print(task_64(5))
 
 
 """Question 65
@@ -87,7 +87,9 @@ def task_65(n):
         return task_65(n - 1) + task_65(n - 2)
 
 
-# print(task_65(7))
+#print(task_65(7))
+
+
 """Question 66
 The Fibonacci Sequence is computed based on the following formula:
 
@@ -104,10 +106,10 @@ def task_66(n):
     elif n == 1:
         return 1
     else:
-        return task_65(n - 1) + task_65(n - 2)
+        return task_66(n - 1) + task_66(n - 2)
 
 
-# print(task_66(7))
+#print(task_66(-7))
 
 
 """Question 67
@@ -155,7 +157,7 @@ def task_68(n):
     return ",".join(res)
 
 
-# print(task_68(int(input())))
+#print(task_68(int(input())))
 
 
 """Question 69
@@ -177,7 +179,7 @@ def task_69(n):
     return ",".join(res)
 
 
-# print(task_69(int(input())))
+#print(task_69(int(input())))
 
 
 """Question 70
@@ -191,4 +193,4 @@ def task_70():
         assert i % 2 == 0
 
 
-# print(task_70())
+#print(task_70())
